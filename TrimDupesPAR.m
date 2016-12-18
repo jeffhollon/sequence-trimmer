@@ -1,6 +1,5 @@
-function [ TrimList ] = TrimDupesVer3( RawList , cores)
-%TRIMDUPES Summary of this function goes here
-%   Detailed explanation goes here
+function [ TrimList ] = TrimDupesPAR( RawList , cores)
+%TRIMDUPES
     
     count = 0;
     
@@ -8,13 +7,9 @@ function [ TrimList ] = TrimDupesVer3( RawList , cores)
     count = count + 1;
     Temp(count,:) = RawList(1,:);
     
-  
-
     %get all possible autocorrelations of the first
     CheckList = getAllAutoMorphsVer2( Temp(count,:) , cores );
-    
   
-    
     %Go through each item in RawList and remove anything which is the same
     %as the first one
  
