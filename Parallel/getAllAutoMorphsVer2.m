@@ -1,6 +1,5 @@
 function [ SAME ] = getAllAutoMorphsVer2( M, cores )
-%COMPAREMATRICES Summary of this function goes here
-%   Detailed explanation goes here
+%COMPAREMATRICES
 
     N = size(M,2); %size of matrices
     

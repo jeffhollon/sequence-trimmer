@@ -1,6 +1,5 @@
 function [ TheGCD ] = getGCD( FirstRow )
-%GETGCD Summary of this function goes here
-%   Detailed explanation goes here
+%GETGCD 
     FirstRow( find(FirstRow==0) ) = [];
 
     N=size(FirstRow,2);

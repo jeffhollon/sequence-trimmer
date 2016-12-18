@@ -1,6 +1,5 @@
 function [ MtoP ] = getPowerOfMFirstRow( Matrix, Power )
-%GETPOWEROFM Summary of this function goes here
-%   Detailed explanation goes here
+%GETPOWEROFM 
     N=size(Matrix,2);
     Coeffs=1:N;
     coeffs=zeros(N);
